@@ -6,7 +6,7 @@
 (define (divisible x)
     (if (andmap zero? (map (lambda (z) (modulo x z)) div-nums))
       x
-      (divisible (add1 x))))
+      (divisible (+ x 20))))
 
 (define (main)
   (display "Smallest divisible number is... ")
