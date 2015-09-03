@@ -1,5 +1,5 @@
 #lang racket
-; Sum of even-valued Fibonacci's under 4 million
+; Sum of even-valued Fibonacci's under 4 million (pe#2)
 
 (define maximum 4000000)
 

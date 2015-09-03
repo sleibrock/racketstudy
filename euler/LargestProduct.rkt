@@ -2,6 +2,7 @@
 ; Largest Product of Digits in a 1k digit number
 ; The number is far too large to look good in code
 ; So I'm just gonna append it as a bunch of strings
+; also it's pe#8
 
 (define NUMBER '("73167176531330624919225119674426574742355349194934"
                  "96983520312774506326239578318016984801869478851843"

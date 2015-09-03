@@ -1,9 +1,10 @@
 #lang racket
-; First triangle number with 500 divisors
+; First triangle number with 500 divisors (pe#12)
 ; Triangle x = sum [1 .. x]
 
 ; Find all factors of x
 ; Calculates numbers from 1..sqrt(x)
+; Why? because sqrt(x)*sqrt(x) = x
 (define (find-factors x acc cont)
     (if (= acc (add1 (floor (sqrt x))))
       cont
