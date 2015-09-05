@@ -18,6 +18,6 @@
 
 (define (main)
   (display "Finding the sum of diagonals of a 1001^2 spiral: ")
-  (display find-diag-sum 1 1 1))
+  (displayln (find-diag-sum 1 1 1)))
 
 (time (main))
