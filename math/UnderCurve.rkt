@@ -9,12 +9,17 @@
       (under-curve fx dx (+ a dx) b
                    (+ acc (fx a)))))
 
+; Real -> Real
 (define (square x) (* x x))
+
+; Real -> Real
 (define (ad-square x) (/ (* x x x) 3))
 
+; Real -> Real -> Real
 (define (under-curve-ad a b)
   (- (ad-square b) (ad-square a)))
 
+; Void -> Void
 (define (main)
   (display "Iterative: ")
   (displayln (under-curve square 0.1 1 10 0))
