@@ -1,13 +1,13 @@
 #lang racket
 ; Area Under a Curve using Calculus and iterative approach
-; Riemman Sum = [ f(x) * dx | x = [a..b] ]
+; Riemman Sum = dx * [ f(x) | x = [a..b] ]
 
 ; Procedure -> Real -> Real -> Real -> Real -> Real
 (define (under-curve fx dx a b acc)
   (if (>= a b)
-      acc
+      (* dx acc)
       (under-curve fx dx (+ a dx) b
-                   (+ acc (* dx (fx a))))))
+                   (+ acc (fx a)))))
 
 (define (square x) (* x x))
 (define (ad-square x) (/ (* x x x) 3))
