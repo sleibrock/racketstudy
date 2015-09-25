@@ -1,5 +1,5 @@
-Racket Exercises
-================
+Racket Study
+============
 
 Various problems solved with Racket, from basic Computer Science to Project Euler to whatever.
 
